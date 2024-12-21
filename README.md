@@ -2,6 +2,8 @@
 
 Este é um aplicativo de arquitetura que exibe serviços e projetos personalizados para clientes. Através de uma interface intuitiva, os usuários podem explorar diferentes projetos residenciais e comerciais, visualizando galerias e imagens relacionadas aos serviços oferecidos. O app é construído com **Next.js** e usa a **API do Pixabay** para exibir imagens relacionadas aos serviços de arquitetura.
 
+Link para acesso: https://design-architecture-beige.vercel.app/
+
 ## Funcionalidades
 
 1. **Serviços Personalizados**: Apresenta os diferentes tipos de serviços de arquitetura, como **Projetos Residenciais** e **Projetos Comerciais**.
@@ -71,3 +73,8 @@ A aplicação estará disponível em [http://localhost:3000](http://localhost:30
 - Adicionar a possibilidade de personalizar a busca de imagens por tipo de ambiente ou projeto.
 - Implementar uma tela de contato para potenciais clientes interessados nos serviços.
 - Melhorar o desempenho da galeria utilizando técnicas de lazy loading para imagens.
+
+## 📝 Contato
+
+- **Desenvolvedor:** [Wallinson Rocha](https://dev.wallinson.com)
+- **E-mail:** wallinsonrochadev@gmail.com
