@@ -1,3 +1,4 @@
+"use client"
 import './page.css'
 import Galery from "./galery";
 
@@ -7,11 +8,12 @@ export default function Home() {
       <main>
         <section id="servico">
           <div className="servico__titulo">
-            <p className="tagline">Nossos Serviços</p>
-            <h3>Descubra Como Podemos Ajudar Você</h3>
+            <p className="tagline">Grandes Projetos</p>
+            <h3>Descubra como podemos ajudar você a criar ambientes únicos e funcionais.</h3>
             <p>
-              Oferecemos soluções completas e personalizadas para atender às suas necessidades. Cada etapa é
-              planejada com cuidado e executada com excelência, garantindo resultados acima das expectativas.
+              Oferecemos um serviço de arquitetura completo e personalizado, onde cada projeto é pensado para
+              atender às suas necessidades. Do conceito à execução, trabalhamos com cuidado, criatividade e
+              precisão para oferecer resultados além das expectativas.
             </p>
           </div>
 
@@ -23,9 +25,9 @@ export default function Home() {
                 </div>
                 <h3>Transformando Espaços com Elegância e Funcionalidade</h3>
                 <p>
-                  Cada ambiente reflete um pouco de quem você é. Nós transformamos sonhos em realidade,
-                  criando espaços únicos e personalizados para você viver, trabalhar e relaxar, com
-                  sofisticação e funcionalidade.
+                  Nós acreditamos que cada espaço deve refletir quem você é. Seja em sua casa, 
+                  escritório ou em um ambiente comercial, nossa missão é transformar sonhos em realidade, 
+                  criando lugares sofisticados e funcionais.
                 </p>
               </div>
             </div>
@@ -40,7 +42,7 @@ export default function Home() {
                 <div className="servico__serv">
                   <p>Projetos Comercial</p>
                 </div>
-                <h3>Transformando Espaços com Elegância e Funcionalidade</h3>
+                <h3>Soluções arquitetônicas para empresas</h3>
                 <p>
                   Cada ambiente reflete um pouco de quem você é. Nós transformamos sonhos em realidade,
                   criando espaços únicos e personalizados para você viver, trabalhar e relaxar, com
