@@ -1,42 +1,158 @@
+/* ====================== Variáveis globais ====================== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Textos - Tamanho */
+  --h1-tam: 40px;
+  --h2-tam: 36px;
+  --h3-tam: 32px;
+  --h4-tam: 24px;
+  --h5-tam: 20px;
+  --h6-tam: 18px;
+  --p-tam: 16px;
+
+  /* Texto - Fontes */
+  --font-title: 'Questrial';
+  --font-p: 'Montserrat';
+  --font-h1: "Posterama 2001 W04 Regular";
+
+  /* Textos - Peso */
+  --bold: 700;
+  --regular: 400;
+
+  /* Cores Background */
+  --bg-primaria: #F4F5EF;
+  --bg-secundaria: #594A37;
+
+  /* Cores */
+  --primaria: #5F6F8A;
+  --secundaria: #987B59;
+  --terciario: #F4F5EF;
+  --quartnaria: #594A37;
+
+  /* Cores Texto */
+  --text-primaria: #000;    
+  --text-alternada: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (min-width: 768px) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+      --h1-tam: 44px;
+      --h2-tam: 48px;
+      --h3-tam: 40px;
+      --h4-tam: 32px;
+      --h5-tam: 24px;
+      --h6-tam: 20px;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* ====================== CSS ====================== */
 
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+  line-height: 120%;
+}
+
+h1 {
+  font-size: var(--h1-tam);
+}
+
+h2 {
+  font-size: var(--h2-tam);
+}
+
+h3 {
+  font-size: var(--h3-tam);
+}
+
+h4 {
+  font-size: var(--h4-tam);
+}
+
+h5 {
+  font-size: var(--h5-tam);
+}
+
+h6 {
+  font-size: var(--h6-tam);
+}
+
+p {
+  font-family: var(--font-p);
+  font-size: var(--p-tam);
+  line-height: 150%;
 }
 
 a {
-  color: inherit;
+  font-family: var(--font-p);
+  font-size: var(--a-tam);
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+img {
+  -webkit-user-drag: none;    
+  user-drag: none;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.tagline {
+  font-weight: var(--bold);
+  text-transform: uppercase;
+}
+
+.contact__link {
+  background: var(--terciario);
+  background-size: 800px;
+
+  width: fit-content;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: #f5efe9 0px 0px 0px;
+  color: var(--text-primaria);
+  transition: ease-in .4s background-position, ease-in .6s box-shadow;
+
+  &:hover {
+      background-position: 100%;
+      box-shadow: #f5efe9 0px 0px 25px;
+  }
+}
+
+section {
+  padding: 64px 1rem;
+}
+
+footer {
+  padding: 1rem 5%;
+}
+
+/* ====================== TABLETS ====================== */
+
+@media (min-width: 768px) {
+
+  section {
+      padding: 4rem 6rem;
+  }
+}
+
+/* ====================== DESKTOP ====================== */
+
+@media (min-width: 1024px) {
+
+  section {
+      padding: 4rem 5%;
   }
 }

@@ -1,95 +1,61 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import './page.css'
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      <main>
+        <section id="servico">
+          <div className="servico__titulo">
+            <p className="tagline">Nossos Serviços</p>
+            <h3>Descubra Como Podemos Ajudar Você</h3>
+            <p>
+              Oferecemos soluções completas e personalizadas para atender às suas necessidades. Cada etapa é
+              planejada com cuidado e executada com excelência, garantindo resultados acima das expectativas.
+            </p>
+          </div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+          <div className="servico__container">
+            <div className="servico__cards">
+              <div className="servico__content">
+                <div className="servico__serv">
+                  {/* <img src="assets/images/servicos/icons/icon-proje-interiores.svg"
+                    alt="Icone Projeto Interiores"> */}
+                    <p>Projetos Residenciais</p>
+                </div>
+                <h3>Transformando Espaços com Elegância e Funcionalidade</h3>
+                <p>
+                  Cada ambiente reflete um pouco de quem você é. Nós transformamos sonhos em realidade,
+                  criando espaços únicos e personalizados para você viver, trabalhar e relaxar, com
+                  sofisticação e funcionalidade.
+                </p>
+              </div>
+            </div>
+            <div id="proj-residencial">
+            </div>
+          </div>
+
+          <div className="servico__container">
+            <div className="servico__cards">
+              <div className="servico__content">
+                <div className="servico__serv">
+                  {/* <img src="assets/images/servicos/icons/icon-proje-interiores.svg"
+                    alt="Icone Projeto Interiores"> */}
+                    <p>Projetos Comercial</p>
+                </div>
+                <h3>Transformando Espaços com Elegância e Funcionalidade</h3>
+                <p>
+                  Cada ambiente reflete um pouco de quem você é. Nós transformamos sonhos em realidade,
+                  criando espaços únicos e personalizados para você viver, trabalhar e relaxar, com
+                  sofisticação e funcionalidade.
+                </p>
+              </div>
+            </div>
+            <div id="proj-comercial">
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
