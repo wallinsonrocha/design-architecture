@@ -1,5 +1,5 @@
-import Image from "next/image";
 import './page.css'
+import Galery from "./galery";
 
 export default function Home() {
   return (
@@ -19,9 +19,7 @@ export default function Home() {
             <div className="servico__cards">
               <div className="servico__content">
                 <div className="servico__serv">
-                  {/* <img src="assets/images/servicos/icons/icon-proje-interiores.svg"
-                    alt="Icone Projeto Interiores"> */}
-                    <p>Projetos Residenciais</p>
+                  <p>Projetos Residenciais</p>
                 </div>
                 <h3>Transformando Espaços com Elegância e Funcionalidade</h3>
                 <p>
@@ -32,6 +30,7 @@ export default function Home() {
               </div>
             </div>
             <div id="proj-residencial">
+              <Galery name="interior design" />
             </div>
           </div>
 
@@ -39,9 +38,7 @@ export default function Home() {
             <div className="servico__cards">
               <div className="servico__content">
                 <div className="servico__serv">
-                  {/* <img src="assets/images/servicos/icons/icon-proje-interiores.svg"
-                    alt="Icone Projeto Interiores"> */}
-                    <p>Projetos Comercial</p>
+                  <p>Projetos Comercial</p>
                 </div>
                 <h3>Transformando Espaços com Elegância e Funcionalidade</h3>
                 <p>
@@ -52,6 +49,7 @@ export default function Home() {
               </div>
             </div>
             <div id="proj-comercial">
+              <Galery name="commercial architecture" />
             </div>
           </div>
         </section>
