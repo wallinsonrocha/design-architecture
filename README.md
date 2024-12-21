@@ -15,7 +15,6 @@ Link para acesso: https://design-architecture-beige.vercel.app/
 - **Next.js**: Framework React para renderização do lado do servidor (SSR) e construção de páginas dinâmicas.
 - **React**: Biblioteca JavaScript para construir a interface de usuário.
 - **Axios**: Cliente HTTP usado para fazer requisições para a API do Pixabay.
-- **Tailwind CSS**: Framework CSS utilizado para o estilo da interface.
 - **Pixabay API**: API usada para buscar e exibir imagens relacionadas aos serviços de arquitetura.
 
 ## Como Rodar o Projeto
@@ -59,14 +58,13 @@ A aplicação estará disponível em [http://localhost:3000](http://localhost:30
 
 - `pages/`: Contém os arquivos de página principais, como a `Home`, onde os serviços e galeria de projetos são exibidos.
 - `components/`: Contém componentes reutilizáveis como o `Gallery`, responsável pela galeria interativa de imagens.
-- `styles/`: Contém o arquivo de estilo global para o projeto.
 
 ## Como Funciona
 
 1. O componente `Home` apresenta os serviços de arquitetura.
 2. O componente `Galery` carrega as imagens de serviços específicos via chamada para a API do Pixabay.
 3. O usuário pode explorar diferentes imagens dos projetos, com a opção de selecionar miniaturas ou visualizar as imagens maiores ao clicar nas fotos.
-4. Ao visualizar a galeria expandida, as imagens podem ser abertas em um link externo.
+
 
 ## Melhorias Futuras
 
